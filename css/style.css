@@ -239,8 +239,8 @@ header .continar .text-left button a {
 header .continar .img-right img {
   position: relative;
   left: -50rem;
-  width: 600;
-  height: 600;
+  width: 600px;
+  height: auto;
   margin-top: 50px;
   animation: move 5s linear infinite;
   transition: 1s;
@@ -309,6 +309,18 @@ header .links-right i {
   header .continar .text-left h1 {
     margin-top: 100px;
   }
+
+  header .continar .img-right img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media(max-width:375px) {
+  header .continar .img-right img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @media(max-width:1023px) {
@@ -320,20 +332,12 @@ header .links-right i {
   header .continar .text-left h1 {
     margin-top: 100px;
   }
-
-  header .continar .img-right img {
-    width: 500px;
-  }
 }
 
 @media(max-width:540px) {
   header .continar .text-left h1 {
     font-size: 22px;
     margin-top: 50px;
-  }
-
-  header .continar .img-right img {
-    width: 400px;
   }
 }
 
