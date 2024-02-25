@@ -65,7 +65,6 @@ body {
 }
 
 /* Start Loders */
-
 /* End Loders */
 /* Start Header */
 header {
@@ -73,7 +72,7 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  z-index: 123;
+  z-index: 1;
 }
 
 header::before {
@@ -82,7 +81,7 @@ header::before {
   width: 100%;
   height: 100%;
   background-color: var(--white-bg-color);
-  z-index: -1;
+  z-index: -1334;
   transform: skewY(-10deg);
   transform-origin: top left;
 }
@@ -479,278 +478,7 @@ header .links-right i {
 }
 
 /* End Boxes */
-/* start signUp& login  */
-/* start login  */
-.login-page {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .image {
-    img {
-      width: 100%;
-    }
-  }
-
-  .login {
-    flex-grow: 1;
-    text-align: right;
-    width: 100%;
-
-    h1 {
-      padding-bottom: 25px;
-
-      span {
-        color: var(--white-blue-color);
-      }
-    }
-
-    p {
-      font-size: 18px;
-      color: #777;
-      padding-bottom: 20px;
-    }
-
-    form {
-      .form {
-        position: relative;
-
-        .text {
-          position: absolute;
-          right: 5px;
-          bottom: 27px;
-          transition: 0.5s;
-          background-color: transparent;
-        }
-
-        .eye {
-          position: absolute;
-          left: 5px;
-          bottom: 27px;
-          cursor: pointer;
-        }
-
-        input {
-          position: relative;
-          width: 100%;
-          border: none;
-          margin: 25px auto;
-          background-color: transparent;
-          text-align: right;
-          font-size: 17px;
-          padding: 0 10px;
-          border-bottom: 2px solid #777;
-
-          &:focus {
-            outline: none;
-            border-bottom: 2px solid var(--white-blue-color);
-          }
-
-          &:focus~.text,
-          &:valid~.text {
-            bottom: 55px;
-            background-color: var(--white-bg-color);
-            padding: 0 5px;
-            color: var(--white-blue-color);
-          }
-        }
-      }
-
-      p {
-        span {
-          a {
-            color: var(--white-blue-color);
-          }
-        }
-      }
-
-      button {
-        background-color: var(--white-blue-color);
-        border: none;
-        color: var(--white-color);
-        padding: 10px 30px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.5s;
-        margin-bottom: 15px;
-      }
-    }
-  }
-}
-
-/* start sign up  */
-.signup-page {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .image {
-      img {
-        width: 100%;
-      }
-    }
-
-    .signUp {
-      text-align: right;
-      width: 100%;
-      flex-grow: 1;
-
-      h1 {
-        color: var(--white-color);
-
-        span {
-          color: var(--white-blue-color);
-        }
-      }
-
-      p {
-        color: #777;
-        font-size: 18px;
-        margin: 2px auto 25px;
-      }
-
-      form {
-
-        .name,
-        .phones,
-        .passwords {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 15px;
-        }
-
-        .email {
-          .form {
-            input {
-              width: 100%;
-
-              &:focus~label,
-              &:valid~label {
-                bottom: 55px;
-                background-color: var(--white-bg-color);
-                padding: 0 5px;
-                color: var(--white-blue-color);
-              }
-            }
-          }
-        }
-
-        .form {
-          direction: ltr;
-          position: relative;
-
-          label {
-            position: absolute;
-            right: 5px;
-            bottom: 27px;
-            transition: 0.5s;
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            span {
-              color: var(--white-blue-color);
-            }
-          }
-
-          input {
-            position: relative;
-            width: 100%;
-            border: none;
-            margin: 25px 0;
-            background-color: transparent;
-            text-align: right;
-            font-size: 17px;
-            padding: 0 10px;
-            border-bottom: 2px solid #777;
-
-            &:focus {
-              outline: none;
-              border-bottom: 2px solid var(--white-blue-color);
-            }
-
-            &:focus~label,
-            &:valid~label {
-              bottom: 55px;
-              background-color: var(--white-bg-color);
-              padding: 0 5px;
-              color: var(--white-blue-color);
-            }
-          }
-        }
-
-        p {
-          span {
-            a {
-              color: var(--white-blue-color);
-            }
-          }
-        }
-
-        button {
-          background-color: var(--white-blue-color);
-          border: none;
-          color: var(--white-color);
-          padding: 10px 30px;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.5s;
-          margin-bottom: 15px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1182px) {
-  .login-page {
-    .container {
-      flex-direction: column;
-    }
-  }
-
-  .signup-page {
-    .container {
-      flex-direction: column;
-
-      .signUp {
-        form {
-          .form {
-            input {
-              width: 350px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 742px) {
-  .signup-page {
-    .container {
-      flex-direction: column;
-
-      .signUp {
-        form {
-          .form {
-            input {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* end signUp& login  */
 /* Start Footer */
 footer {
   width: 100%;
@@ -874,11 +602,14 @@ footer .links .so i:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transition: .4s;
+  transition: .6s;
   border: 1px solid var(--blue-color);
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
   cursor: pointer;
+  transform: scale(0);
+  position: relative;
+  bottom: -10rem;
 }
 
 .-phase .boxes:hover {

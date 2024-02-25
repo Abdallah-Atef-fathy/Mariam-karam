@@ -49,3 +49,14 @@ window.onscroll = function () {
 window.onload = () => {
   manageContainer();
 }
+
+
+
+
+var loader = document.querySelector(".lo");
+
+window.addEventListener("load",vanish)
+
+function vanish() {
+loader.classList.add(".loader")
+}
