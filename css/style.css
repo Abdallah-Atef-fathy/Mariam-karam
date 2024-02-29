@@ -616,6 +616,11 @@ footer .links .so i:hover {
   cursor: pointer;
   transform: scale(0);
 }
+@media (max-width: 767px) {
+  .-phase .boxes {
+    width: 100%;
+  }
+}
 
 .-phase .boxes:hover {
   border-radius: 10px;
