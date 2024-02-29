@@ -168,7 +168,7 @@ nav .links-right .links .tow a:hover {
   gap: 15px;
 }
 
-.links-right .btn {
+.links-right i {
   font-size: 30px;
   color: var(--white-blue-color);
   cursor: pointer;
@@ -289,14 +289,14 @@ header .continar .img-right img {
 /* End Header */
 /* Start Media */
 @media (max-width: 768px) {
-  nav .links-right .bars {
+  .links-right .bars {
     display: block;
   }
 
-  nav .links-right .links {
+  .links-right .links {
     position: absolute;
     top: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -304,7 +304,9 @@ header .continar .img-right img {
     padding: 30px;
     transition: 0.5s;
   }
+}
 
+@media (max-width: 768px) {
   header .continar {
     display: flex;
     flex-direction: column;
