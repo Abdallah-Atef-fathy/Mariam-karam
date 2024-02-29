@@ -593,6 +593,8 @@ footer .links .so i:hover {
   flex-wrap: wrap;
   text-align: center;
   gap: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .-phase .boxes {
@@ -671,7 +673,6 @@ footer .links .so i:hover {
 .accordion .container .accordion-item .collapse .accordion-body a:hover button {
   background-color: transparent;
   color: var(--black-bg-color);
-  padding: 8px 15px;
   border: 1px solid var(--black-bg-color);
 }
 
@@ -685,6 +686,9 @@ footer .links .so i:hover {
   letter-spacing: 1px;
   padding: 8px 15px;
   transition: .4s;
+  max-width: 90px;
+  height: auto;
+  word-wrap: break-word;
 }
 
 .accordion .container .accordion-item .collapse p {
