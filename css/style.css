@@ -11,12 +11,12 @@ html {
 }
 
 :root {
-  --blue-color: #0D47A1;
-  --white-color: #FFFFFF;
-  --green-color: #4CAF50;
-  --white-blue-color: #03A9F4;
+  --blue-color: #0d47a1;
+  --white-color: #ffffff;
+  --green-color: #4caf50;
+  --white-blue-color: #03a9f4;
   --white-yellow-color: #ab9f2e;
-  --white-orange-color: #FF9800;
+  --white-orange-color: #ff9800;
   --white-bg-color: #e2e2e2;
   --black-bg-color: #121215;
 }
@@ -37,21 +37,21 @@ a {
 }
 
 /* small */
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .continar {
     width: 750px;
   }
 }
 
 /* Mediume */
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .continar {
     width: 970px;
   }
 }
 
 /* Large */
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .continar {
     width: 1170px;
   }
@@ -134,7 +134,7 @@ header nav .links-right .links button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 header nav .links-right .links .one {
@@ -219,7 +219,7 @@ header .continar .text-left button {
   background-color: var(--white-blue-color);
   border: none;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 header .continar .text-left button:hover {
@@ -246,7 +246,8 @@ header .continar .img-right img {
 }
 
 @keyframes move {
-  0%, 100% {
+  0%,
+  100% {
     top: 0;
   }
 
@@ -270,18 +271,24 @@ header .links-right i {
 }
 
 @keyframes bouncing {
-  0%, 10%, 20%, 50%, 80%, 100% {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translateY(-20px);
   }
 }
 
 /* End Header */
 /* Start Media */
-@media(max-width:768px) {
+@media (max-width: 768px) {
   header .links-right i {
     display: block;
   }
@@ -295,11 +302,11 @@ header .links-right i {
     width: 100%;
     left: -50em;
     padding: 30px;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   header .continar {
     display: flex;
     flex-direction: column;
@@ -315,14 +322,14 @@ header .links-right i {
   }
 }
 
-@media(max-width:375px) {
+@media (max-width: 375px) {
   header .continar .img-right img {
     width: 300px;
     height: auto;
   }
 }
 
-@media(max-width:1023px) {
+@media (max-width: 1023px) {
   header .continar {
     display: flex;
     flex-direction: column;
@@ -333,20 +340,20 @@ header .links-right i {
   }
 }
 
-@media(max-width:540px) {
+@media (max-width: 540px) {
   header .continar .text-left h1 {
     font-size: 22px;
     margin-top: 50px;
   }
 }
 
-@media(max-width:430px) {
+@media (max-width: 430px) {
   header .continar .text-left h1 {
     margin-top: 100px;
   }
 }
 
-@media(max-width:375px) {
+@media (max-width: 375px) {
   header .continar .text-left h1 {
     margin-top: 50px;
   }
@@ -376,7 +383,6 @@ header .links-right i {
 
 .ani .continar .box {
   padding: 30px;
-
 }
 
 .ani .continar .box .text p {
@@ -438,7 +444,7 @@ header .links-right i {
 #boxes .continar .box {
   cursor: pointer;
   width: 300px;
-  transition: .20s;
+  transition: 0.2s;
   border: 1px solid var(--blue-color);
   margin: 20px 0;
   border-radius: 10px;
@@ -488,6 +494,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   flex-shrink: 1;
   padding: 40px;
   color: var(--white-color);
@@ -526,11 +533,11 @@ footer .student ul a {
   letter-spacing: 2px;
 }
 
-footer .links>a {
+footer .links > a {
   display: block;
   color: var(--black-bg-color);
   margin-bottom: 30px;
-  font-size: 21px
+  font-size: 21px;
 }
 
 footer .links .so {
@@ -545,19 +552,17 @@ footer .links .so i {
   font-size: 25px;
   color: var(--white-color);
   position: absolute;
-  transition: .20s;
+  transition: 0.2s;
 }
 
 footer .links .so i:hover {
   top: -5px;
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
   footer {
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 30px;
+    justify-content: center;
+    gap: 5rem;
   }
 }
 
@@ -598,25 +603,28 @@ footer .links .so i:hover {
 }
 
 .-phase .boxes {
-  width: 280px;
-  height: 500px;
+  width: 580px;
+  height: 350px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transition: .6s;
+  transition: 0.6s;
   border: 1px solid var(--blue-color);
-  border-top-right-radius: 35px;
-  border-bottom-left-radius: 35px;
+  border-radius: 35px;
   cursor: pointer;
   transform: scale(0);
-  position: relative;
-  bottom: -10rem;
+}
+
+@media (max-width: 767px) {
+  .-phase .boxes {
+    width: 350px;
+  }
 }
 
 .-phase .boxes:hover {
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
 }
 
 .-phase .boxes a {
@@ -667,7 +675,7 @@ footer .links .so i:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .accordion .container .accordion-item .collapse .accordion-body a:hover button {
@@ -685,7 +693,7 @@ footer .links .so i:hover {
   font-size: 14px;
   letter-spacing: 1px;
   padding: 8px 15px;
-  transition: .4s;
+  transition: 0.4s;
   max-width: 90px;
   height: auto;
   word-wrap: break-word;
