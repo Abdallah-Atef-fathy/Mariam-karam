@@ -84,29 +84,24 @@ section {
     .answers {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      direction: rtl;
 
       .answer {
         background-color: var(--blue-color);
-        width: 350px;
-        height: 50px;
+        width: 450px;
+        min-height: 50px;
         color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-size: 20px;
         cursor: pointer;
         margin-bottom: 3rem;
         position: relative;
         transition: 0.5s;
-        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        &.choosed {
-          background-color: var(--white-blue-color);
-        }
-
+        &.choosed,
         &:hover {
           background-color: var(--white-blue-color);
         }
@@ -115,7 +110,7 @@ section {
           content: "";
           position: absolute;
           border: 25px solid transparent;
-          border-right-color: white;
+
           right: 0;
         }
       }
@@ -233,8 +228,6 @@ section {
       flex-wrap: wrap;
 
       P {
-        display: flex;
-        align-items: center;
         font-weight: bold;
         font-size: 1rem;
         padding-bottom: 15px;
@@ -258,9 +251,23 @@ section {
     }
   }
 
-  @media(max-width:965px) {
+  @media (max-width: 991px) {
     .exam {
       width: 600px;
+      .answers {
+        .answer {
+          background-color: var(--blue-color);
+          padding: 0 15px;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+
+          &.choosed,
+          &:hover {
+            background-color: var(--white-blue-color);
+          }
+        }
+      }
     }
 
     .answer {
@@ -270,9 +277,30 @@ section {
     .question {
       flex-wrap: wrap;
     }
+
+    .question-control {
+      button {
+        &::before {
+          content: "";
+          position: absolute;
+          border: 33px solid transparent;
+          top: 0;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .exam-result {
+      flex-direction: column;
+      width: 100%;
+
+      .degree {
+        margin-top: 2rem;
+      }
+    }
   }
 
-  @media(max-width:640px) {
+  @media (max-width: 640px) {
     .exam {
       width: 450px;
     }
@@ -282,7 +310,7 @@ section {
     }
   }
 
-  @media(max-width:570px) {
+  @media (max-width: 570px) {
     .exam {
       width: 300px;
     }
